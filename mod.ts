@@ -58,7 +58,7 @@ function parseFile(filepath: string) {
 }
 
 function isVariableStart(str: string): boolean {
-  return /^[a-zA-Z_ ]*=/.test(str);
+  return /^[a-zA-Z0-9_ ]*=/.test(str);
 }
 
 function cleanQuotes(value: string = ""): string {
